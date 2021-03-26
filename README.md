@@ -7,10 +7,10 @@ pass object via express query example
     yarn
     yarn start
 
-Access to http://localhost:3000/check?user$[ne]=0&password[$ne]=0
+Access to http://localhost:3000/check?user[$ne]=0&password[$ne]=0
 
     req.query
-    // { 'user$': { ne: '0' }, password: { '$ne': '0' } }
+    // { 'user': { '$ne': '0' }, password: { '$ne': '0' } }
 
 
 ## Changelog
